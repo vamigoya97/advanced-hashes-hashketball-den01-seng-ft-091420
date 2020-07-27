@@ -190,6 +190,7 @@ def player_numbers(team_name)
   game_hash.each do |location, stats|
     stats.each do |teams, values|
       if teams == :team_name && values == team_name
+        binding.pry
         values.each do |team|
           numbers << team[:number]
         end
